@@ -68,10 +68,20 @@ button.reset:focus-visible{outline:3px solid var(--flag)}
   <div class="tournament"><h2>Torneo</h2><p>A mediados de diciembre. Llegás fresco, con sprints en las piernas y aire para el último partido.</p></div>
 
   <section class="ref">
-    <h2>Cómo medir el esfuerzo</h2>
+    <h2>Tu punto de partida</h2>
+    <ul>
+      <li>Test de 12 min (31/10): ~2,0 km, a ~5:55/km parejo. Pulso de 160-165 en el medio y 180 al final.</li>
+      <li>Pulso máximo: ~184. Fuerte pero sostenible es 165-175 lpm.</li>
+      <li>Retest el sábado de la semana 4. Meta razonable: ~2,15-2,25 km.</li>
+    </ul>
+  </section>
+
+  <section class="ref">
+    <h2>Ritmos y esfuerzo</h2>
     <dl class="rpe">
-      <dt>Fuerte</dt><dd>7 a 8 sobre 10. Hablás con frases cortas y entrecortadas. Podrías hacer una repetición más, pero no cinco.</dd>
-      <dt>Suave</dt><dd>3 a 4 sobre 10. Trotás o caminás rápido y respirás por la nariz.</dd>
+      <dt>Fuerte</dt><dd>Repeticiones de 3-4 min: ~5:45-6:05/km, con pico de pulso de 165-175. Las de 2 min: ~5:30-5:50/km. Parejo desde la primera, sin arrancar a fondo.</dd>
+      <dt>Suave</dt><dd>Pausa entre repeticiones: trote muy suave (8:30/km o más lento) o caminata corta, hasta que el pulso baje de ~150.</dd>
+      <dt>Z2</dt><dd>Sábados: ~8:00-8:45/km con el pulso por debajo de 150. Si te pasás, no recuperás y arruinás el martes.</dd>
       <dt>Sprint</dt><dd>9 sobre 10, siempre con técnica. Sin tirones: si el isquio avisa, cortás.</dd>
     </dl>
   </section>
@@ -104,22 +114,22 @@ button.reset:focus-visible{outline:3px solid var(--flag)}
 <script>
 const START = new Date(2026, 9, 27); // martes 27/10/2026
 const WEEKS = [
-  {t:"Arranque firme", g:"Meter volumen de trabajo sin matarte. Esfuerzo 7 de 10.",
-   s:[["Martes","3 × 3 min fuerte, 2 min suave entre cada uno."],
-      ["Jueves","4 × 2 min fuerte, 1 min 30 seg suave."],
-      ["Sábado","30 a 35 min de trote muy suave.",1]]},
-  {t:"Armando motor", g:"Subimos una repetición por sesión.",
-   s:[["Martes","4 × 3 min fuerte, 2 min suave."],
-      ["Jueves","5 × 2 min fuerte, 1 min 30 seg suave."],
-      ["Sábado","40 min de trote suave.",1]]},
+  {t:"Arranque y test base", g:"Primera semana: volumen sin matarte, y el test de 12 min como punto de partida.",
+   s:[["Martes","3 × 3 min fuerte, con 2 min de trote muy suave entre cada uno."],
+      ["Jueves","4 × 2 min fuerte, con 1 min 30 seg de trote muy suave."],
+      ["Sábado","Test de 12 min: ~2,0 km a ~5:55/km, con pulso hasta 180. Este es tu punto de partida."]]},
+  {t:"Armando motor", g:"Subimos una repetición por sesión y fijamos los ritmos reales.",
+   s:[["Martes","4 × 3 min fuerte a ~5:45-6:05/km, con picos de pulso de 165-175. Pausa de 2 min en trote muy suave o caminata corta."],
+      ["Jueves","5 × 2 min fuerte a ~5:30-5:50/km. Pausa de 1 min 30 seg suave."],
+      ["Sábado","40 min de Z2 a 8:00-8:45/km, con el pulso por debajo de 150.",1]]},
   {t:"HIIT tipo juego", g:"Cambios de ritmo parecidos a un partido.",
-   s:[["Martes","30-30: 30 seg fuerte, 30 seg suave. 2 bloques de 8, con 3 min de pausa entre bloques."],
-      ["Jueves","4 × 4 min fuerte, 3 min suave."],
-      ["Sábado","45 min de trote suave.",1]]},
-  {t:"Más carga", g:"La semana más pesada de intervalos largos.",
+   s:[["Martes","30-30: 30 seg fuerte (sensación 8 de 10), 30 seg suave. 2 bloques de 8, con 3 min de pausa entre bloques."],
+      ["Jueves","4 × 4 min fuerte a ~5:50-6:10/km, con 3 min de pausa suave."],
+      ["Sábado","45 min de Z2 a 8:00-8:45/km, con el pulso por debajo de 150.",1]]},
+  {t:"Más carga y retest", g:"La semana más pesada de intervalos largos, y el sábado repetís el test.",
    s:[["Martes","30-30: 2 bloques de 10, con 3 min de pausa entre bloques."],
-      ["Jueves","5 × 3 min fuerte, 2 min suave."],
-      ["Sábado","50 a 60 min de trote suave.",1]]},
+      ["Jueves","5 × 3 min fuerte a ~5:45-6:05/km, con 2 min de pausa suave."],
+      ["Sábado","Retest de 12 min: mismo circuito y hora que el primero, con lap manual al empezar y al terminar. Antes, 10 min de calentamiento. Meta razonable: ~2,15-2,25 km."]]},
   {t:"Específico seven", g:"Sprints repetidos con poca pausa, como en cancha.",
    s:[["Martes","10 × 40 m en 2 series de 5. 30 seg de pausa entre sprints y 3 min entre series."],
       ["Jueves","6 × 1 min fuerte con 1 min suave, y al final 4 × 20 m de sprint cansado."],
