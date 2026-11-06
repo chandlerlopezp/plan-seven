@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Plan seven · 7 semanas</title>
+<title>Plan seven · 8 semanas</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -59,13 +59,13 @@ button.reset:focus-visible{outline:3px solid var(--flag)}
 <div class="wrap">
   <header class="hero">
     <h1>Seven: motor para diciembre</h1>
-    <p class="sub">Siete semanas, solo corriendo: martes y jueves de intervalos, sábado suave y opcional. Tildá cada sesión cuando la hagas.</p>
+    <p class="sub">Ocho semanas, solo corriendo: martes y jueves de intervalos, sábado suave y opcional. Tildá cada sesión cuando la hagas.</p>
     <div class="prog"><div class="bar" role="progressbar" aria-label="Progreso del plan" aria-valuemin="0" aria-valuemax="100"><i id="fill"></i></div><div class="pct" id="pct">0%</div></div>
   </header>
 
   <main id="weeks"></main>
 
-  <div class="tournament"><h2>Torneo</h2><p>A mediados de diciembre. Llegás fresco, con sprints en las piernas y aire para el último partido.</p></div>
+  <div class="tournament"><h2>Torneo</h2><p>Sábado 19 de diciembre. Llegás fresco, con sprints en las piernas y aire para el último partido.</p></div>
 
   <section class="ref">
     <h2>Tu punto de partida</h2>
@@ -102,6 +102,7 @@ button.reset:focus-visible{outline:3px solid var(--flag)}
     <ul>
       <li>Calentamiento de 8 a 10 min antes de cada sesión: trote suave, movilidad y 3 aceleraciones progresivas.</li>
       <li>Desde la semana 3, no hagas pierna pesada el día anterior a los intervalos. Si tenés que elegir, mantené el peso y recortá series.</li>
+      <li>Última pierna pesada antes del torneo: peso muerto el domingo 6/12 y sentadilla el viernes 11/12. Después, solo activación liviana.</li>
       <li>Si una semana llegás destruido, repetí la anterior en lugar de avanzar.</li>
       <li>Dolor agudo en gemelo, isquio o rodilla: cortás la sesión. No se negocia.</li>
       <li>Hidratate y comé carbohidratos las horas previas a cada sesión intensa.</li>
@@ -130,18 +131,22 @@ const WEEKS = [
    s:[["Martes","30-30: 2 bloques de 10, con 3 min de pausa entre bloques."],
       ["Jueves","5 × 3 min fuerte a ~5:45-6:05/km, con 2 min de pausa suave."],
       ["Sábado","Retest de 12 min: mismo circuito y hora que el primero, con lap manual al empezar y al terminar. Antes, 10 min de calentamiento. Meta razonable: ~2,15-2,25 km."]]},
-  {t:"Específico seven", g:"Sprints repetidos con poca pausa, como en cancha.",
+  {t:"Específico seven 1", g:"Empiezan los sprints repetidos con poca pausa, como en cancha.",
+   s:[["Martes","8 × 40 m en 2 series de 4. 30 seg de pausa entre sprints y 3 min entre series."],
+      ["Jueves","5 × 1 min fuerte con 1 min suave, y al final 4 × 20 m de sprint cansado."],
+      ["Sábado","Partidito, touch o juego libre de 20 a 30 min.",1]]},
+  {t:"Específico seven 2", g:"Subimos el volumen de sprints. Es la semana más específica antes del simulacro.",
    s:[["Martes","10 × 40 m en 2 series de 5. 30 seg de pausa entre sprints y 3 min entre series."],
       ["Jueves","6 × 1 min fuerte con 1 min suave, y al final 4 × 20 m de sprint cansado."],
       ["Sábado","Partidito, touch o juego libre de 20 a 30 min.",1]]},
-  {t:"Simulacro", g:"Última semana dura. Acá se juega el torneo.",
+  {t:"Simulacro", g:"Última semana dura, una semana antes del torneo.",
    s:[["Martes","12 × 40 m en 2 series de 6. 25 seg de pausa y 3 min entre series."],
       ["Jueves","7 × 1 min fuerte con 1 min suave, y 4 × 20 m de sprint cansado."],
       ["Sábado","Simulacro de torneo: 4 bloques de 7 min de juego o touch, con 20 a 30 min de pausa real entre cada uno. Comé liviano e hidratate como el día del torneo."]]},
-  {t:"Afinación", g:"Bajás volumen y llegás fresco. No se gana más estado esta semana.",
+  {t:"Afinación y torneo", g:"Bajás volumen y llegás fresco. No se gana más estado esta semana. El sábado 19 es el torneo.",
    s:[["Martes","5 sprints de 40 m con pausa completa, más 2 × 2 min fuerte."],
       ["Jueves","20 min de trote suave y 3 aceleraciones.",1],
-      ["Sábado","Descanso o caminata. Hidratación y comida.",1]]}
+      ["Sábado","Torneo. Desayuno fuerte, hidratación constante y comida liviana entre partidos."]]}
 ];
 const KEY = "plan-seven-v1";
 let done = {};
